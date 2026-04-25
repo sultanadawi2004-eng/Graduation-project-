@@ -1,0 +1,111 @@
+.careers {
+  padding: 7rem 0;
+  background: var(--cappuccino-light);
+}
+
+.header { margin-bottom: 3rem; }
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.intro {
+  color: var(--espresso-mid);
+  line-height: 1.8;
+  font-size: .95rem;
+  margin-bottom: .9rem;
+}
+
+.applyBox {
+  margin-top: 2rem;
+  padding: 1.8rem;
+  background: var(--bg-elevated);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  box-shadow: var(--shadow-md);
+}
+.applyText  { font-size: .8rem; color: var(--espresso-dim); text-transform: uppercase; letter-spacing: .1em; font-weight: 600; }
+.applyEmail {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.05rem;
+  color: var(--coffee-dark);
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  transition: color var(--tr);
+}
+.applyEmail:hover { color: var(--coffee); }
+
+.rolesLabel {
+  font-size: .72rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--espresso-dim);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.roleCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  background: var(--bg-card);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: .7rem;
+  transition: var(--tr);
+  box-shadow: var(--shadow-sm);
+}
+.roleCard:hover {
+  border-color: var(--coffee);
+  transform: translateX(6px);
+  box-shadow: 0 10px 35px rgba(122,82,56,0.1);
+}
+
+.roleIcon {
+  width: 40px; height: 40px;
+  background: var(--cappuccino);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--coffee-dark);
+  font-size: .95rem;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+.roleTitle { font-weight: 600; font-size: .92rem; color: var(--espresso); }
+.roleType  { font-size: .76rem; color: var(--espresso-dim); margin-top: .1rem; }
+.roleBtn {
+  margin-left: auto;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: .8rem;
+  transition: var(--tr);
+}
+.roleCard:hover .roleBtn { background: var(--gold-glow); border-color: var(--coffee); color: var(--coffee); }
+
+.specNote {
+  font-size: .78rem;
+  color: var(--espresso-dim);
+  margin-top: .5rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .body { grid-template-columns: 1fr; gap: 2.5rem; }
+}
